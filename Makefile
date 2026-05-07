@@ -2,6 +2,9 @@ CXX      = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O2
 LDFLAGS  = -lpthread
 
+run: all
+	./server
+
 all: server client
 
 server: server.cpp
